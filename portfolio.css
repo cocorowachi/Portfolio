@@ -1,0 +1,293 @@
+html{
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    cursor: context-menu;
+}
+html::-webkit-scrollbar {
+    display: none;
+}
+@font-face {
+    font-family: "Fredericka";
+    src: url("fredericka.ttf");
+}
+@font-face {
+    font-family: "Bookman Old Style";
+    src: url("Bookman Old Style.ttf");
+}
+@font-face {
+    font-family: "Baskerville";
+    src: url("LibreBaskerville-Regular.ttf");
+}
+.titleImg{
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 700;
+    opacity: 1;
+    z-index: 1000;
+    left: 0;
+}
+.logo{
+    font-family: "Fredericka";
+    font-size: 27px;
+    position: absolute;
+    opacity: 1;
+    top: 20px;
+    left: 25px;
+    z-index: 1100;
+    color: rgb(252, 241, 227);
+    cursor: pointer;
+}
+#logo:hover{
+    color: rgb(223, 208, 188);
+}
+h1{
+    font-family: "Fredericka";
+    font-size: 50px;
+    position: absolute;
+    opacity: 0.6;
+    top: 202px;
+    left: 22%;
+    z-index: 1100;
+}
+h2{
+    font-family: "Fredericka";
+    font-size: 40;
+    position: absolute;
+    opacity: 0.65;
+    left: 22.3%;
+    z-index: 1100;
+
+}
+.h21{
+    top: 265px;
+}
+.h22{
+    top: 320px;
+}
+.h23{
+    top: 375px;
+
+}
+h3{
+    font-family: "Fredericka";
+    font-size: 25;
+    position: absolute; 
+    opacity: 0.6;
+    top: 445px;
+    left: 22.3%;
+    z-index: 1100;
+    color: whitesmoke;
+    letter-spacing: 1.5;
+
+}
+.menu{
+    position: absolute;
+    font-family: "Fredericka";
+    font-size: 30px;
+    opacity: 0;
+    z-index: 1100;
+    cursor: pointer;
+}
+.menu:hover{
+    color: rgb(45, 44, 53);
+}
+#abtMe{
+    left: 58%;
+}
+#projects{
+    left: 73%;
+}
+#contact{
+    left: 87%;
+}
+#pfpPic{
+    position: absolute;
+    height: 260px;
+    width: 205;
+    left: 23%;
+    z-index: 1;
+}
+.heading{
+    position: absolute;
+    font-family: "Fredericka";
+    font-size: 65px;
+    left: 18%;
+}
+.button{
+    text-align: right;
+    font-weight: bold;
+    font-size: 100px;
+}
+#abtMeSummary{
+    font-family: "Baskerville";
+    position: absolute;
+    font-size: 17px;
+    left: 44%;
+    width: 30%;
+    z-index: 10;
+    line-height: 1.5;
+    letter-spacing: 0.4;
+}
+#abtMeSummaryBg{
+    position: absolute;
+    left: 42%;
+    width: 34%;
+    height: 260;
+    z-index: 1;
+    background-color: rgb(242, 243, 250);
+}
+#abtMeBtn{
+    font-family: "Fredericka";
+    position: absolute;
+    left: 65%;
+    width: 10%;
+    height: 20px;
+    z-index: 10;
+    background-color: rgb(214, 226, 236);
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    font-style: rgb(0, 0, 0);
+    cursor: pointer;
+}
+#abtMeBtn:hover{
+    background-color: rgb(224, 238, 250);
+}
+.projectBg{
+    position: absolute;
+    width: 55%;
+    height: 210px;
+    left: 21.5%;
+    background-color: rgb(240, 240, 255);
+}
+.projectFront{
+    position: absolute;
+    left: 23%;
+    height: 230;
+}
+.projectBtn{
+    font-family: "Fredericka";
+    position: absolute;
+    width: 10%;
+    height: 20px;
+    z-index: 10;
+    background-color: rgb(214, 226, 236);
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    font-style: rgb(0, 0, 0);
+    cursor: pointer;
+}
+.projectBtn:hover{
+    background-color: rgb(224, 238, 250);
+}
+.projectImgBg{
+    height: 230;
+    position: absolute;
+    left: 23.3%;
+    background-color: rgb(185, 185, 185);
+}
+.projectSummary{
+    position: absolute;
+    font-family: "BaskerVille";
+    font-size: 15px;
+    z-index: 10;
+    line-height: 1.4;
+}
+#wordleHd{
+    position: absolute;
+    font-size: 40;
+    font-family: "Fredericka";
+    left: 65%;
+    z-index: 3500;
+}
+#minecraftHd{
+    position: absolute;
+    font-size: 40;
+    font-family: "Fredericka";
+    z-index: 3500;
+    left: 24%;
+}
+#gameHd{
+    position: absolute;
+    font-size: 40;
+    font-family: "Fredericka";
+    left: 60%;
+    z-index: 3500;
+}
+#project1Summary{
+    left: 51.3%;
+    width: 24%;
+}
+#project1Btn{
+    left: 65%;
+}
+#project2front{
+    left: 49.5%;
+}
+#project2ImgBg{
+    left: 49.8%;
+}
+#project2Summary{
+    left: 23%;
+    width: 25%;
+}
+#project2Btn{
+    left: 37%;
+}
+#project3Summary{
+    left: 56.5%;
+    width: 20.2%;
+    font-size: 14.5;
+    line-height: 1.35;
+}
+#project3Btn{
+    left: 65%;
+}
+#footerBg{
+    background-color: rgb(240, 240, 255);
+    width: 100%;
+    height: 260;
+    position: absolute;
+    left: 0;
+    z-index: 950;
+}
+#contactHd{
+    font-size: 50;
+    z-index: 960;
+}
+.icon{
+    position: absolute;
+    top: 3625;
+    height: 30;
+    width: 30;
+    z-index: 2000;
+}
+#linkedIn{
+    left: 67%;
+}
+#email{
+    left: 71%;
+}
+#downloadResume{
+    position: absolute;
+    left: 61.5%;
+    top: 3585;
+    width: auto;
+    font-size: 20;
+    z-index: 2000;
+    
+}
+#phone{
+    position: absolute;
+    width: 250px;
+    left: 23%;
+    top: 3622;
+    font-size: 20;
+    z-index: 2000;
+    line-height: 1.8;
+    cursor: text;
+}

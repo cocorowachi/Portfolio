@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="abtMe.css">
+    </head>
+    <body onload="scrollToMain()">
+        <img id="titleImg" src="meteor3.png" class="titleImg" >
+        <header>
+            <div class="logo" id="logo" onclick="goBack()">C. Wachi</div>
+            <div class="menu" id="experience" onclick="scrollToProjects()">Activities</div>
+            <div class="menu" id="personal" onclick="scrollToContact()">personal</div>
+        </header>
+        <main>
+            <div><!--abtMe-->
+                <img id="pfpPic" src="pfp.jpg">
+                <p id="abtMeWriting">
+                    Hello! Once again, my name is Cocoro Wachi, and I am currently a student at 
+                    Milwaukee School of Engineering (MSOE), pursuing my undergraduate degree in Computer Science,
+                    with a minor in User Experience Design and Mathematics. My biggest motto in life right now
+                    is to "learn and understand." My biggest joy comes from learning and 
+                    understanding new concepts in math, or learning a good place for some ice cream,
+                    and a lot of my free time is spent taking those questions further and researching about it.
+                </p>
+            </div>
+            <div><!--Experience-->
+                <a href="https://youtube.com">
+                    <div id="viewProjectBtn">View my Projects</div>
+                </a>
+                <a href="resume.jpg" download="resume.jpg">
+                    <div id="downloadResume">Download Resume</div>
+                </a>
+            </div>
+            <img id="resume" src="resume.jpg">
+        </main>
+    </body>
+    <footer>
+        <script>
+            window.addEventListener('scroll', () => {
+                scrolled = window.scrollY;
+                newValue = window.pageYOffset;
+                document.getElementById("logo").style.top = scrolled + 10 + "px";
+                document.getElementById("experience").style.top = scrolled + 10 + "px";
+                document.getElementById("personal").style.top = scrolled + 10 + "px";
+                document.getElementById("titleImg").style.top = scrolled - 650 + "px";
+            });
+
+            function goBack(){
+                location.replace("./portfolio.html");
+            }
+            function scrollToMain(){
+                window.scrollTo(-10, 0);
+            }
+        </script>
+    </footer>
+</html>

@@ -1,0 +1,138 @@
+html{
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+html::-webkit-scrollbar {
+    display: none;
+}
+@font-face {
+    font-family: "Fredericka";
+    src: url("fredericka.ttf");
+}
+@font-face {
+    font-family: "Baskerville";
+    src: url("LibreBaskerville-Regular.ttf");
+}
+.titleImg{
+    position: absolute;
+    width: 100%;
+    height: 700;
+    top: -650;
+    opacity: 1;
+    z-index: 1000;
+}
+.logo{
+    font-family: "Fredericka";
+    font-size: 27px;
+    position: absolute;
+    opacity: 1;
+    top: 10px;
+    left: 25px;
+    z-index: 1100;
+    color: rgb(252, 241, 227);
+    cursor: pointer;
+}
+#logo:hover{
+    color: rgb(223, 208, 188);
+}
+.menu:hover{
+    color: rgb(45, 44, 53);
+}
+#pfpPic{
+    position: absolute;
+    width: 15%;
+    left: 25%;
+    z-index: 1;
+    top: 110;
+}
+.menu{
+    position: absolute;
+    font-family: "Fredericka";
+    font-size: 30px;
+    opacity: 1;
+    z-index: 1100;
+    top: 10;
+    cursor: pointer;
+}
+#abtMe{
+    left: 58%;
+}
+#experience{
+    left: 72%;
+}
+#personal{
+    left: 87%;
+}
+#abtMeWriting{
+    position: absolute;
+    font-family: "Baskerville";
+    left: 42%;
+    font-size: 15;
+    width: 34%;
+    top: 106;
+    line-height: 1.45;
+    letter-spacing: 0.1;
+}
+.heading{
+    position: absolute;
+    font-family: "Fredericka";
+    font-size: 50px;
+    left: 15%;
+}
+#background{
+    top: 600;
+}
+#skills{
+    top: 1600;
+}
+#viewProjectBtn{
+    top: 420;
+    font-family: "Fredericka";
+    position: absolute;
+    left: 23%;
+    width: 15%;
+    height: 4.5%;
+    padding: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    z-index: 10;
+    background-color: rgb(214, 226, 236);
+    border-radius: 5px;
+    border: none;
+    font-size: 22px;
+    font-style: rgb(0, 0, 0);
+    cursor: pointer;
+    text-align: center;
+}
+#downloadResume{
+    top: 420;
+    font-family: "Fredericka";
+    position: absolute;
+    left: 60%;
+    width: 15%;
+    height: 4.5%;
+    padding: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    z-index: 10;
+    background-color: rgb(214, 226, 236);
+    border-radius: 5px;
+    border: none;
+    font-size: 22px;
+    font-style: rgb(0, 0, 0);
+    cursor: pointer;
+    text-align: center;
+}
+#viewProjectBtn:hover{
+    background-color: rgb(224, 238, 250);
+}
+#resume{
+    position: absolute;
+    width: 44%;
+    top: 510;
+    left: 28%;
+    background-color: rgb(0, 0, 0);
+    padding: 1.5px;
+}

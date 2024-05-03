@@ -1,0 +1,181 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="portfolio.css">
+    </head>
+    <body onload="scrollToMain()">
+        <img id="titleImg" src="meteor3.png" class="titleImg" >
+        <header>
+            <div class="logo" id="logo" onclick="scrollToMain()">C. Wachi</div>
+            <div class="menu" id="abtMe" onclick="scrollToAbtMe()">About me</div>
+            <div class="menu" id="projects" onclick="scrollToProjects()">Projects</div>
+            <div class="menu" id="contact" onclick="scrollToContact()">Contact</div>
+        </header>
+        <titleScreen>
+            <h1>Cocoro Wachi</h1><br>
+            <h2 class="h21">Designer,</h2><br>
+            <h2 class="h22">Learner,</h2><br>
+            <h2 class="h23">Explorer.</h2><br>
+            <h3>I have a passion in <br> discovering new things.</h3>
+        </titleScreen>
+        <main>
+            <!--About Me -->
+            <div class="heading" id="abtMeHd">About me</div>
+            <img id="pfpPic" src="pfp.jpg" >
+            <div id="abtMeSummaryBg"></div>
+            <p id="abtMeSummary">I'm a student at Milwaukee School of Engineering, pursuing a degree in computer science.
+                However, my interest goes beyond my major; by utilizing my passion and knowledge in mathematics,
+                physics, music and design thinking, I'm hoping to work with you to make a product to make someone's life better.</p>
+            <button type="button" id="abtMeBtn" style="text-align:right;" onclick="expandAbtMe()">Read More &rarr;</button>
+            <div id="abtMeExpandedBox"></div>
+            <!--Projects-->
+            <div class="heading" id="projectsHd">Projects</div>
+            <project1>
+                <div id="wordleHd">Wordle</div>
+                <div class="projectBg" id="project1Bg"></div>
+                <div class="projectImgBg" id="project1ImgBg"></div>
+                <img class="projectFront" id="project1front" src="Wordle play screen.png" alt="">
+                <p class="projectSummary" id="project1Summary">
+                    Following steps of the SDLC, my team of 5 developed a mock up version of the New York Times "Wordle."
+                    Over the course of 16 weeks, we made PBIs to work on during sprints, assigned scrum master, 
+                    and held appropriate meetings like the sprint review and the sprint retrospective.
+                </p>
+                <button type="button" class="projectBtn" id="project1Btn" onclick="expandProject(1)">Read More &rarr;</button>
+            </project1>
+            <project2>
+                <div id="minecraftHd">Minecraft</div>
+                <div class="projectBg" id="project2Bg"></div>
+                <div class="projectImgBg" id="project2ImgBg"></div>
+                <img class="projectFront" id="project2front" src="Minecraft play screen.png" alt="">
+                <p class="projectSummary" id="project2Summary">
+                    As my end of the year project for my introductory programming course that I first took, 
+                    I decided to make a 2D Minecraft completely from scratch. I spent over 20 hours each week outside school hours
+                    researching ways to improve my first ever game design.
+                </p>
+                <button type="button" class="projectBtn" id="project2Btn" onclick="expandProject(2)">Read More &rarr;</button>
+            </project2>
+            <project3>
+                <div id="gameHd">UX Design</div>
+                <div class="projectBg" id="project3Bg"></div>
+                <div class="projectImgBg" id="project3ImgBg"></div>
+                <img class="projectFront" id="project3front" src="Game play screen.jpg" alt="">
+                <p class="projectSummary" id="project3Summary">
+                    By conducting interviews and creating User Personas and Journey Maps, our team of 4 
+                    designed a game towards a targeted group. We had a tight deadline 
+                    of 2 weeks, spending numerous hours on user experience and the process we took.
+                </p>
+                <button type="button" class="projectBtn" id="project3Btn" onclick="expandProject(3)">Read More &rarr;</button>
+            </project3>
+            <div class="heading" id="contactHd">Contacts</div>
+            <div id="phone">(224) 345-1255 wachic@msoe.edu</div>
+            <a href="https://www.linkedin.com/in/cocorowachi">
+                <img class="icon" id="linkedIn" src="linkedIn.png" alt="">
+            </a>
+            <a href="mailto: wachic@msoe.edu">
+                <img class="icon" id="email" src="email.png" alt="">
+            </a>
+            <a href="resume.jpg" download="resume.jpg">
+                <div id="downloadResume">Download Resume</div>
+            </a>
+            <div id="footerBg"></div>
+        </main>
+    </body>
+    <footer>
+        <script>
+            var titleImgScrollSpd = 2;
+            var titleImgHeight = 700;
+            var headerHeight = 100;
+
+            var mainLocation = 0;
+            var abtMeLocation = 1370;
+            var projectsLocation = 1950;
+            var contactLocation = 3160;
+            var HdScrollSpeed = 1.02;
+            var calibrater = 1;
+            document.getElementById("pfpPic").style.top = abtMeLocation + 250;
+            document.getElementById("abtMeHd").style.top = abtMeLocation + 127;
+            document.getElementById("abtMeSummary").style.top = abtMeLocation + 250;
+            document.getElementById("abtMeSummaryBg").style.top = abtMeLocation + 250;
+            document.getElementById("abtMeBtn").style.top = abtMeLocation + 480;
+            document.getElementById("abtMeExpandedBox").style.top = abtMeLocation + 530;
+
+            document.getElementById("projectsHd").style.top = projectsLocation + 190;
+            
+            document.getElementById("project1front").style.top = projectsLocation + 310;
+            document.getElementById("wordleHd").style.top = projectsLocation + 280;
+            document.getElementById("project1Bg").style.top = projectsLocation + 320;
+            document.getElementById("project1Summary").style.top = projectsLocation + 325;
+            document.getElementById("project1Btn").style.top = projectsLocation + 500;
+            document.getElementById("project1ImgBg").style.top = projectsLocation + 316;
+            document.getElementById("project1ImgBg").style.width = document.getElementById("project1front").width;
+        
+            document.getElementById("project2front").style.top = projectsLocation + 630;
+            document.getElementById("minecraftHd").style.top = projectsLocation + 600;
+            document.getElementById("project2Bg").style.top = projectsLocation + 640;
+            document.getElementById("project2Summary").style.top = projectsLocation + 645;
+            document.getElementById("project2Btn").style.top = projectsLocation + 820;
+            document.getElementById("project2ImgBg").style.top = projectsLocation + 636;
+            document.getElementById("project2ImgBg").style.width = document.getElementById("project2front").width;
+
+            document.getElementById("project3front").style.top = projectsLocation + 950;
+            document.getElementById("gameHd").style.top = projectsLocation + 920;
+            document.getElementById("project3Bg").style.top = projectsLocation + 960;
+            document.getElementById("project3Summary").style.top = projectsLocation + 959;
+            document.getElementById("project3Btn").style.top = projectsLocation + 1140;
+            document.getElementById("project3ImgBg").style.top = projectsLocation + 956;
+            document.getElementById("project3ImgBg").style.width = document.getElementById("project3front").width;
+            
+            document.getElementById("contactHd").style.top = projectsLocation + 1600;
+            document.getElementById("footerBg").style.top = projectsLocation + 1560;
+
+            origHeight = 400;
+            window.addEventListener('scroll', () => {
+                scrolled = window.scrollY;
+                newValue = window.pageYOffset;
+                if(scrolled<titleImgHeight*titleImgScrollSpd){
+                    document.getElementById("titleImg").style.top = (scrolled/titleImgScrollSpd) + "px";
+                }
+                // document.getElementById("abtMeHd").style.top = (abtMeLocation*2.165)-scrolled*HdScrollSpeed;
+                // document.getElementById("projectsHd").style.top = (projectsLocation*2.165)-scrolled*HdScrollSpeed;
+                // document.getElementById("contactHd").style.top = (contactLocation*2.165)-scrolled*HdScrollSpeed;
+                if(scrolled>(titleImgHeight*titleImgScrollSpd)-headerHeight){
+                    //bring texts down to fixed pos in header
+                    document.getElementById("logo").style.top = scrolled + 10 + "px";
+                    document.getElementById("abtMe").style.top = scrolled + 10 + "px";
+                    document.getElementById("projects").style.top = scrolled + 10 + "px";
+                    document.getElementById("contact").style.top = scrolled + 10 + "px";
+                    //gradual opacity increase
+                    document.getElementById("logo").style.opacity = (scrolled-(titleImgHeight*titleImgScrollSpd-headerHeight))/70;
+                    document.getElementById("abtMe").style.opacity = (scrolled-(titleImgHeight*titleImgScrollSpd-headerHeight))/70;
+                    document.getElementById("projects").style.opacity = (scrolled-(titleImgHeight*titleImgScrollSpd-headerHeight))/70;
+                    document.getElementById("contact").style.opacity = (scrolled-(titleImgHeight*titleImgScrollSpd-headerHeight))/70;
+                    //fix title image top
+                    document.getElementById("titleImg").style.top = scrolled - (titleImgHeight - headerHeight/2) + "px";
+                }
+                else{
+                    document.getElementById("logo").style.top = 10 + "px";
+                    document.getElementById("logo").style.opacity = 1;
+                    document.getElementById("abtMe").style.top = -500 + "px";
+                    document.getElementById("projects").style.top = -500 + "px";
+                    document.getElementById("contact").style.top = -500 + "px";
+                }
+            });
+            var abtMeExpanded = false;
+            function expandAbtMe(){
+                location.replace("./abtMe.html");
+            }
+
+            function scrollToMain(){
+                window.scrollTo(0, 0);
+            }
+            function scrollToAbtMe(){
+                window.scrollTo(0, abtMeLocation*HdScrollSpeed);
+            }
+            function scrollToProjects(){
+                window.scrollTo(0, projectsLocation*(HdScrollSpeed**2)*calibrater);
+            }
+            function scrollToContact(){
+                window.scrollTo(0, contactLocation*(HdScrollSpeed**3)*0.99*calibrater);
+            }
+        </script>
+    </footer>
+</html>
