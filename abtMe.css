@@ -17,7 +17,7 @@ html::-webkit-scrollbar {
 }
 .titleImg{
     position: absolute;
-    width: 100%;
+    width: 1280;
     height: 700;
     top: -650;
     opacity: 1;
